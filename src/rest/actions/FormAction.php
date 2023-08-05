@@ -3,7 +3,7 @@
 namespace nadzif\core\rest\actions;
 
 
-use nadzif\core\rest\components\BaseForm;
+use nadzif\core\rest\components\FormModel;
 use nadzif\core\rest\components\HttpException;
 use nadzif\core\rest\components\Response;
 use nadzif\core\web\components\Action;
@@ -64,7 +64,7 @@ class FormAction extends Action
     {
         $formClass = $this->formClass;
 
-        /** @var BaseForm $form */
+        /** @var FormModel $form */
         $form             = new $formClass();
         $form->attributes = \Yii::$app->request->getBodyParams();
 

@@ -4,7 +4,7 @@ namespace nadzif\core\rest\components;
 
 use yii\base\Model;
 
-abstract class BaseForm extends Model
+abstract class FormModel extends Model
 {
     /**
      * @return mixed
