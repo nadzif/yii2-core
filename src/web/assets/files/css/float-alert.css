@@ -1,0 +1,38 @@
+.alert-box.box-side {
+    position: fixed;
+    width: 100%;
+    top: 50px;
+    right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 999;
+}
+
+.alert-content .alert-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert-box.box-side .loading {
+    background: #ffffff;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 0;
+}
+
+@media (min-width: 576px) {
+    .alert-box.box-side {
+        top: 70px;
+        right: 20px;
+        width: 250px;
+        padding: 0;
+
+    }
+}
